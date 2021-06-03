@@ -1,0 +1,53 @@
+[Wed Jun 02 14:29:22 2021] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Jun 02 14:29:23 2021] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Jun 02 14:29:24 2021] [notice] Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/1.0.1c PHP/5.3.13 configured -- resuming normal operations
+[Wed Jun 02 14:29:24 2021] [notice] Server built: Apr 20 2012 18:42:30
+[Wed Jun 02 14:29:24 2021] [notice] Parent: Created child process 3108
+[Wed Jun 02 14:29:24 2021] [notice] Disabled use of AcceptEx() WinSock2 API
+[Wed Jun 02 14:29:24 2021] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Jun 02 14:29:25 2021] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Wed Jun 02 14:29:25 2021] [notice] Child 3108: Child process is running
+[Wed Jun 02 14:29:25 2021] [notice] Child 3108: Acquired the start mutex.
+[Wed Jun 02 14:29:25 2021] [notice] Child 3108: Starting 25 worker threads.
+[Wed Jun 02 14:29:25 2021] [notice] Child 3108: Listening on port 443.
+[Wed Jun 02 14:29:25 2021] [notice] Child 3108: Listening on port 8648.
+[Wed Jun 02 14:29:25 2021] [notice] Child 3108: Listening on port 443.
+[Wed Jun 02 14:29:25 2021] [notice] Child 3108: Listening on port 80.
+[Wed Jun 02 16:57:23 2021] [error] [client 127.0.0.1] PHP Warning:  date() expects parameter 2 to be long, string given in Z:\\denwer\\www\\denwer\\php\\Comments.php on line 39, referer: http://localhost/denwer/
+[Wed Jun 02 17:32:11 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/js, referer: http://localhost/denwer/
+[Wed Jun 02 17:33:10 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/js, referer: http://localhost/denwer/
+[Wed Jun 02 17:33:22 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/js, referer: http://localhost/denwer/
+[Wed Jun 02 17:41:01 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/js, referer: http://localhost/denwer/
+[Wed Jun 02 17:41:29 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/js, referer: http://localhost/denwer/
+[Wed Jun 02 17:41:34 2021] [error] [client 127.0.0.1] File does not exist: Z:/denwer/www/denwer/myadmin
+[Wed Jun 02 17:45:15 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/js, referer: http://localhost/denwer/
+[Wed Jun 02 19:44:59 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/php, referer: http://localhost/denwer/
+[Wed Jun 02 19:45:28 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/php, referer: http://localhost/denwer/
+[Wed Jun 02 19:48:24 2021] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'Exception' with message 'Wrong action' in Z:\\denwer\\www\\denwer\\php\\Requests.php:10\nStack trace:\n#0 {main}\n  thrown in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 10
+[Wed Jun 02 20:06:38 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 6
+[Wed Jun 02 21:49:23 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{' in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 2, referer: http://localhost/denwer/
+[Wed Jun 02 21:49:41 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{' in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 3, referer: http://localhost/denwer/
+[Wed Jun 02 23:09:57 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '^' found in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 18, referer: http://localhost/denwer/
+[Wed Jun 02 23:13:47 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ';' in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 18, referer: http://localhost/denwer/
+[Wed Jun 02 23:14:12 2021] [error] [client 127.0.0.1] File does not exist: Z:/home/localhost/www/img
+[Wed Jun 02 23:20:13 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '^' found in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 18, referer: http://localhost/denwer/
+[Wed Jun 02 23:20:26 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '/' found in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 18, referer: http://localhost/denwer/
+[Wed Jun 02 23:26:08 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ';' in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 18, referer: http://localhost/denwer/
+[Wed Jun 02 23:28:21 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_DEFAULT in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 37, referer: http://localhost/denwer/
+[Wed Jun 02 23:28:37 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_DEFAULT in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 34, referer: http://localhost/denwer/
+[Wed Jun 02 23:28:53 2021] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_DEFAULT in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 34, referer: http://localhost/denwer/
+[Wed Jun 02 23:32:40 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: nothing to repeat at offset 43 in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 28, referer: http://localhost/denwer/
+[Wed Jun 02 23:32:47 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: nothing to repeat at offset 43 in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 28, referer: http://localhost/denwer/
+[Wed Jun 02 23:34:32 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '^' found in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 28, referer: http://localhost/denwer/
+[Wed Jun 02 23:34:52 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '^' found in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 28, referer: http://localhost/denwer/
+[Wed Jun 02 23:35:00 2021] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '/' found in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 28, referer: http://localhost/denwer/
+[Wed Jun 02 23:51:45 2021] [error] [client 127.0.0.1] PHP Warning:  json_encode() expects parameter 2 to be long, string given in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 34, referer: http://localhost/denwer/
+[Wed Jun 02 23:53:25 2021] [error] [client 127.0.0.1] PHP Warning:  json_encode() expects parameter 2 to be long, string given in Z:\\denwer\\www\\denwer\\php\\Requests.php on line 34, referer: http://localhost/denwer/
+[Thu Jun 03 02:12:33 2021] [error] [client 127.0.0.1] File does not exist: Z:/denwer/www/denwer/g
+[Thu Jun 03 02:12:33 2021] [error] [client 127.0.0.1] File does not exist: Z:/denwer/www/denwer/errors
+[Thu Jun 03 02:14:16 2021] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 03 02:14:16 2021] [notice] Child 3108: Exit event signaled. Child process is ending.
+[Thu Jun 03 02:14:17 2021] [notice] Child 3108: Released the start mutex
+[Thu Jun 03 02:14:17 2021] [notice] Child 3108: All worker threads have exited.
+[Thu Jun 03 02:14:18 2021] [notice] Child 3108: Child process is exiting
+[Thu Jun 03 02:14:18 2021] [notice] Parent: Child process exited successfully.
