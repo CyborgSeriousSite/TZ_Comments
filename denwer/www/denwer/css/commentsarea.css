@@ -1,0 +1,122 @@
+#commentContainer{
+  width: 800px;
+  margin: 32px auto;
+  position: relative;
+  box-shadow: 0 0 12px rgba(0,0,0,0.725);
+  border-radius: 32px 32px 8px 8px;
+}
+
+#comHeaderRounded{
+  text-align: center;
+  padding: 16px;
+  font: 24px Calibri,Arial,sans-serif;
+  background: #FFFFFF;
+  border-radius: 32px 32px 0px 0px;
+  border: 2px inset #000000;
+}
+
+#comCentralContent{
+  height: 450px;
+  background: #FFFFFF;
+	border-color: #000000;
+	border-style: inset;
+	border-width: 0px 2px 0px 2px;
+}
+
+#comFooterRounded{
+  background: #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
+  border: 2px inset #000000;
+  height: 256px;
+}
+
+.miTable{
+  padding: 10px 4px 4px 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
+
+.miTblInputBox{
+  width: 337px;
+}
+
+.miCellLabel{
+  text-align: left;
+  width: 64px;
+}
+
+.miInputMessage{
+  resize: none;
+  width: 98%;
+  height: 128px;
+}
+
+.miElementPaddingTop{
+  padding-top: 8px;
+}
+
+.miSubmitBtn{
+  width: 407px;
+  display: block;
+}
+
+.OneCommentContainer{
+  width: 100%;
+  display: block;
+  background-color: #C4C4C4;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.725);
+  margin-bottom: 8px;
+}
+
+.OneCommentContainer:last-of-type{
+  margin-bottom:0;
+}
+
+.commentAvatar{
+  width: 48px;
+  height: 48px;
+  margin: 4px 16px 0px 4px;
+  border-radius: 50%;
+}
+
+.commentAuthorHeader{
+  display: inline;
+  vertical-align: 165%;
+  font-size: 16px;
+  color: #000;
+}
+
+.commentHeaderTime{
+  display: inline;
+  float: right;
+  padding-top: 6px;
+  padding-right: 8px;
+  font-size: 16px;
+  color: #3B3E00;
+}
+
+.commentText{
+  font-size: 16px;
+  margin-top: -26px;
+  margin-left: 68px;
+  padding-bottom: 8px;
+  color: #000;
+}
+
+.errRedElement{
+  border-color: red;
+  -webkit-transition : border 1000ms ease-out;
+  -moz-transition : border 1000ms ease-out;
+  -o-transition : border 1000ms ease-out;
+  transition : border 1000ms ease-out;
+}
+
+.fakeMessage{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
