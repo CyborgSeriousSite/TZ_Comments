@@ -2,16 +2,27 @@
 setlocale(LC_ALL, "ru_RU.UTF-8");
 error_reporting(E_ALL ^ E_NOTICE);
 
-require "classes/DataBase.class.php";
-$dbSettings = array(
-  'db_host' => 'localhost',
-  'db_user' => 'root', 
-  'db_pass' => '',
-  'db_name' => 'tzchat'
-);
-
 if(isset($_POST["Action"]))
 {
+  //Параметры для подключения к БД
+  $db_host = "localhost";
+  $db_user = "root";
+  $db_pass = "";
+  $db_name = "tzchat";
+  
+  //Класс сообщения
+  class userMessage {  
+    public $strFIO;
+    public $strEmail;
+    public $strText;
+    
+    function __construct($f,$e,$t) {  
+      $this->strFIO = $f;  
+      $this->strEmail = $e;  
+      $this->strText = $t;  
+    }  
+  }
+
   switch($_POST["Action"])
   {
     //Создание сообщений
@@ -61,13 +72,16 @@ if(isset($_POST["Action"]))
         //После успешных проверок создаем сообщение в БД
         if($isFullValid)
         {
-          try
+          //Подключаемся к базе данных
+          try 
           {
-            DataBase::init($dbSettings);
-            DataBase::query("INSERT INTO usermessages (fio, email, content) VALUES ('".$inpUserName."', '".$inpUserEmail."', '".$inpText."')");
+            $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
+            $umNewEntry = new userMessage($inpUserName,$inpUserEmail,$inpText); //Создаем переменную класс
+            $dbRequest = $db->prepare("INSERT INTO usermessages (fio, email, content) values (:strFIO, :strEmail, :strText)");  
+            $dbRequest->execute((array)$umNewEntry); //Исполняем запрос с параметрами созданной переменной-класса
           }
-          catch(Exception $e)
-          {
+          catch(PDOException $e) 
+          {  
             array_push($responseJSON, "Error: Server error!");
           }
         }

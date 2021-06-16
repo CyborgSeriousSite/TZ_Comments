@@ -15,20 +15,23 @@
         //Вот тут у нас настраивается переменная для получения доступа к базе данных, то есть конфигурация БД
         //Пока что стандартный root без пароля. 
         //Для безопасности хорошо было бы создать собственного пользователя, дать ему пароль и ему назначить привелегии по доступу к базе данных (настройки вплоть по количеству запросов доступных в час
-        $dbSettings = array(
-          'db_host' => 'localhost',
-          'db_user' => 'root', 
-          'db_pass' => '',
-          'db_name' => 'tzchat'
-        );
+        $db_host = "localhost";
+        $db_user = "root";
+        $db_pass = "";
+        $db_name = "tzchat";
         
         //Выводим ошибочки
         error_reporting(E_ALL ^ E_NOTICE);
         
-        //Подключаем наш класс базы данных!
-        require "classes/DataBase.class.php";
-        //Подключаем класс комментов. Включает в себя функции-запросы.
-        require "classes/TzChat.class.php";
+        //Подключаемся к базе данных
+        try 
+        {
+          $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);   
+        }
+        catch(PDOException $e) 
+        {  
+          die($e->getMessage());  
+        }
         
         //Функция для отрисовки комментариев
         function createMessagePost($entryMessage)
@@ -44,19 +47,22 @@
         //Да начнется процесс формирования списка сообщений :)
         try
         {
-          // Соединение с базой данных
-          DataBase::init($dbSettings);
-          $responseResult = TzChat::getEntriesCount();
-          if($responseResult>0)
+          //Начнем с запроса количества сообщений
+          $db_query = $db->query('SELECT COUNT(*) as cnt FROM usermessages');
+          $db_query->setFetchMode(PDO::FETCH_NUM);
+          $entryCount = $db_query->fetch();
+          if($entryCount>0)
           {
-            $arrMessages = TzChat::getMessages();
-            while ($eMessage = $arrMessages->fetch_row()) 
+            //Запрос на имеющиеся сообщения
+            $db_query = $db->query('SELECT * FROM usermessages ORDER BY publicationtime LIMIT 64');
+            $db_query->setFetchMode(PDO::FETCH_NUM);
+            while ($eMessage = $db_query->fetch()) 
             {
               createMessagePost($eMessage);
             }
           }
         }
-        catch(Exception $e)
+        catch(PDOException $e)
         {
           die(json_encode(array('error' => $e->getMessage())));
         }
