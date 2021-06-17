@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Реализация технического задания</title>
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="css/commentsarea.css" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <div id="commentContainer">
+      <p id="comHeaderRounded">Сообщения</p>
+      <div id="comCentralContent">
+        <div id="comMessagesFrame">
+        
+        </div>
+      </div>
+      <div id="comFooterRounded">
+        <form id="submitForm" method="post" action="">
+          <table class="miTable">
+            <tr>
+              <td class="miCellLabel">
+                <span>ФИО</span>
+              </td>
+              <td>
+                <input onchange="onFIOFieldChanged()" id="miFIO" class="miTblInputBox" maxlength="64"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="miCellLabel">
+                <span>Email</span>
+              </td>
+              <td>
+                <input onchange="onEmailFieldChanged()" id="miEMAIL" class="miTblInputBox" maxlength="64"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan=2 class="miElementPaddingTop">
+                <span>Текст сообщения</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan=2>
+                <textarea onchange="onMSGTextFieldChanged()" maxlength="2000" id="miMessage" class="miInputMessage">
+                </textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan=2>
+                <input id="miSendMessageBtn" type="button" onclick="sendMessage()" class="miSubmitBtn" value="Отправить"/>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

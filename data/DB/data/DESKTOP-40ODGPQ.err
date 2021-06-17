@@ -1,0 +1,13 @@
+2021-06-17T11:31:59.804756Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-06-17T11:31:59.805001Z 0 [System] [MY-013169] [Server] C:\Server\bin\mysql-8.0\bin\mysqld.exe (mysqld 8.0.25) initializing of server in progress as process 15708
+2021-06-17T11:31:59.951871Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-06-17T11:32:13.129628Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-06-17T11:32:30.265813Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2021-06-17T11:33:30.398528Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-06-17T11:33:30.398778Z 0 [System] [MY-010116] [Server] C:\Server\bin\mysql-8.0\bin\mysqld.exe (mysqld 8.0.25) starting as process 3348
+2021-06-17T11:33:30.491546Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2021-06-17T11:33:35.527987Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2021-06-17T11:33:36.299307Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2021-06-17T11:33:37.697425Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-06-17T11:33:37.697976Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2021-06-17T11:33:37.864883Z 0 [System] [MY-010931] [Server] C:\Server\bin\mysql-8.0\bin\mysqld.exe: ready for connections. Version: '8.0.25'  socket: ''  port: 3306  MySQL Community Server - GPL.
